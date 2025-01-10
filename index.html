@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KianCast - Global Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 class="app-title">KianCast</h1>
+            <h2 class="app-subtitle">Global Weather Forecast</h2>
+        </header>
+
+        <!-- Powered By Button -->
+        <button class="powered-by">Powered by 7Timer!</button>
+
+        <!-- Dropdown to Select a City -->
+        <div class="dropdown-container">
+            <select id="citySelect" class="city-select">
+                <option value="" disabled selected>Select a City</option>
+            </select>
+        </div>
+
+        <!-- Weather Forecast Title -->
+        <h3 class="forecast-title">10-Day Weather Forecast</h3>
+
+        <!-- Weather Slider Container -->
+        <div class="slider-container">
+            <button id="slideLeft" class="slider-btn">&lt;</button>
+            <div id="weatherSlider" class="slider">
+                <!-- Forecast cards will be dynamically injected here -->
+            </div>
+            <button id="slideRight" class="slider-btn">&gt;</button>
+        </div>
+
+        <!-- Decorative World Map -->
+        <div class="world-map">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg" alt="World Map">
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 KianCast</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
